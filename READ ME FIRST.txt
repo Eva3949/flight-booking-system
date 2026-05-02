@@ -1,0 +1,23 @@
+Section:- 3 ( group-5 )
+---------------------------------------------- Flight Booking System Website for Data base implementation -----------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Alert! in this zip file there is two database .sql file the name "database.sql" file is use for xampp only because php does not support microdoft sql
+          * "database.sql" ------------------> for xampp it used to implement the WEBSITE --------> this is for xampp (MariaDB-compatible)
+          * "DB for Microsoft SQL.sql" ------> FOR MICROSOFTEW SERVER as an assigniment submit ---> this is for assigniment submition (Microsoft server-compatible)
+1st Step: Extract file
+2nd Step: Copy the main project folder
+3rd Step: Paste in xampp/htdocs/
+4th Step: Open a browser and go to URL “http://localhost/phpmyadmin/”
+5th Step: Then, click on the databases tab
+6th Step: Create a database naming “flight_booking_system” and then click on the import tab  (prease do not use DB for Microsoft SQL .sql file  )
+7th Step: Click on browse file and select “database.sql” file which is inside the folder
+8th Step: Click on go.
+
+After Creating Database,
+
+9th Step: Open a browser and go to URL “http://localhost/flight-booking-system/index.php”    after that first register
+
+Note: For admin panel, go to URL ” http://localhost/flight-booking-system/admin/index.php” 
+                            admin email:-evadevstudio@gmail.com     
+                            password:- admin123
+                     after this please mark the chake box registera as an admin/staff then login

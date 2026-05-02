@@ -1,0 +1,826 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+  background-color: #f8f9fa;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #d4a017;
+  transition: color 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header Styles - Ethiopian Airlines Theme */
+header {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  border-bottom: 3px solid #d4a017;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo i {
+  margin-right: 0.8rem;
+  font-size: 2rem;
+  color: #d4a017;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+}
+
+nav ul li a:hover {
+  color: #d4a017;
+  background-color: rgba(212, 160, 23, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Main Content Styles */
+main {
+  min-height: calc(100vh - 60px - 100px);
+  padding: 2rem 0;
+}
+
+/* Hero Section */
+.hero {
+  background-image: linear-gradient(rgba(30, 60, 114, 0.7), rgba(42, 82, 152, 0.7)),
+    url("../images/ethiopian-airlines-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 0;
+  margin-bottom: 2rem;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.8;
+}
+
+/* Search Form - Ethiopian Airlines Style */
+.search-form {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 2.5rem;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(30, 60, 114, 0.15);
+  border: 1px solid rgba(212, 160, 23, 0.2);
+  margin-top: -3rem;
+  position: relative;
+  z-index: 10;
+}
+
+.search-form h2 {
+  color: #1e3c72;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.form-col {
+  flex: 1;
+  padding: 0 10px;
+  min-width: 200px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #1e3c72;
+  font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #d4a017;
+  box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.1);
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #d4a017 0%, #f4c430 100%);
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(212, 160, 23, 0.3);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #b8941f 0%, #d4a017 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 160, 23, 0.4);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  box-shadow: 0 4px 15px rgba(30, 60, 114, 0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #172b4d 0%, #1e3c72 100%);
+  box-shadow: 0 6px 20px rgba(30, 60, 114, 0.4);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #28a745 0%, #34ce57 100%);
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #218838 0%, #28a745 100%);
+  box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #dc3545 0%, #e4606d 100%);
+  box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
+}
+
+.btn-danger:hover {
+  background: linear-gradient(135deg, #c82333 0%, #dc3545 100%);
+  box-shadow: 0 6px 20px rgba(220, 53, 69, 0.4);
+}
+
+/* Card Styles - Ethiopian Airlines Theme */
+.card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(30, 60, 114, 0.1);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border: 1px solid rgba(212, 160, 23, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(30, 60, 114, 0.15);
+}
+
+.card-header {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  padding: 1.5rem;
+  border-bottom: 3px solid #d4a017;
+  color: #fff;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card-footer {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 1.5rem;
+  border-top: 1px solid rgba(212, 160, 23, 0.1);
+}
+
+/* Flight Card */
+.flight-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s;
+}
+
+.flight-card:hover {
+  background-color: #f9f9f9;
+}
+
+.flight-card:last-child {
+  border-bottom: none;
+}
+
+.flight-logo {
+  flex: 0 0 80px;
+  text-align: center;
+}
+
+.flight-logo i {
+  font-size: 2.5rem;
+  color: #0066cc;
+}
+
+.flight-details {
+  flex: 1;
+  padding: 0 1.5rem;
+}
+
+.flight-route {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.flight-city {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.flight-route-divider {
+  flex: 1;
+  height: 2px;
+  background-color: #ddd;
+  position: relative;
+  margin: 0 1rem;
+}
+
+.flight-route-divider::after {
+  content: "✈";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #0066cc;
+}
+
+.flight-time {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.flight-info {
+  display: flex;
+  color: #666;
+}
+
+.flight-info div {
+  margin-right: 1.5rem;
+}
+
+.flight-price {
+  flex: 0 0 150px;
+  text-align: center;
+}
+
+.flight-price .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0066cc;
+  margin-bottom: 0.5rem;
+}
+
+/* Booking Details */
+.booking-details {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.booking-details-col {
+  flex: 1;
+  min-width: 300px;
+  padding: 0 15px;
+  margin-bottom: 1.5rem;
+}
+
+.passenger-form {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.passenger-form:last-child {
+  border-bottom: none;
+}
+
+/* Payment Form */
+.payment-methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.payment-method {
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.payment-method:hover {
+  border-color: #0066cc;
+}
+
+.payment-method.active {
+  border-color: #0066cc;
+  background-color: #f0f7ff;
+}
+
+.payment-method-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.payment-method-header i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  color: #0066cc;
+}
+
+/* Ticket */
+.ticket {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.ticket-header {
+  background-color: #003366;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-airline {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.ticket-status {
+  background-color: #28a745;
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.ticket-body {
+  padding: 1.5rem;
+}
+
+.ticket-route {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.ticket-city {
+  text-align: center;
+}
+
+.ticket-city-code {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.ticket-city-name {
+  color: #666;
+}
+
+.ticket-route-divider {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.ticket-route-line {
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
+  position: relative;
+}
+
+.ticket-route-line::before,
+.ticket-route-line::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 50%;
+  top: -3px;
+}
+
+.ticket-route-line::before {
+  left: 0;
+}
+
+.ticket-route-line::after {
+  right: 0;
+}
+
+.ticket-route-icon {
+  margin-top: 0.5rem;
+  color: #0066cc;
+}
+
+.ticket-details {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.ticket-detail {
+  flex: 1;
+  min-width: 120px;
+  padding: 0 10px;
+  margin-bottom: 1rem;
+}
+
+.ticket-detail-label {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.ticket-detail-value {
+  font-weight: 500;
+}
+
+.ticket-footer {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.ticket-barcode {
+  font-family: "Courier New", monospace;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.ticket-note {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Alert Messages */
+.alert {
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.alert-info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+}
+
+/* Features Section */
+.features {
+  margin: 3rem 0;
+}
+
+.features-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.features-heading h2 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.features-heading p {
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.feature-item {
+  flex: 1;
+  min-width: 300px;
+  padding: 0 15px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: #0066cc;
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #003366;
+}
+
+.feature-desc {
+  color: #666;
+}
+
+/* Footer Styles - Ethiopian Airlines Theme */
+footer {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: #fff;
+  padding: 3rem 0 1.5rem;
+  margin-top: 3rem;
+  border-top: 3px solid #d4a017;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+  padding: 0 15px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-col h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  color: #d4a017;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  padding: 0.3rem 0;
+  display: block;
+}
+
+.footer-col ul li a:hover {
+  color: #d4a017;
+  transform: translateX(5px);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(212, 160, 23, 0.3);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .flight-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .flight-logo,
+  .flight-details,
+  .flight-price {
+    flex: 0 0 100%;
+    margin-bottom: 1rem;
+  }
+
+  .flight-route {
+    flex-direction: column;
+  }
+
+  .flight-route-divider {
+    width: 2px;
+    height: 40px;
+    margin: 1rem 0;
+  }
+
+  .flight-route-divider::after {
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+  }
+
+  .flight-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flight-info div {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .ticket-route {
+    flex-direction: column;
+  }
+
+  .ticket-route-divider {
+    width: 2px;
+    height: 50px;
+    margin: 1rem 0;
+  }
+
+  .ticket-route-line {
+    width: 2px;
+    height: 100%;
+  }
+
+  .ticket-route-line::before,
+  .ticket-route-line::after {
+    left: -3px;
+    width: 8px;
+    height: 8px;
+  }
+
+  .ticket-route-line::before {
+    top: 0;
+  }
+
+  .ticket-route-line::after {
+    top: auto;
+    bottom: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .search-form {
+    padding: 1.5rem;
+  }
+}
