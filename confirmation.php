@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Booking Confirmation";
-require_once 'includes/header.php';
+require_once 'includes/header.php';  
 
 // Check if user is logged in
 if (!isLoggedIn()) {
