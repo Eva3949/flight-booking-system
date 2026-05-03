@@ -143,4 +143,4 @@ $flightCount = $db->query("SELECT COUNT(*) as count FROM flights WHERE departure
     <?php endif; ?>
 </div>
 
-<?php require_once 'includes/footer.php'; ?>
+<?php require_once 'includes/footer.php'; ?>  
