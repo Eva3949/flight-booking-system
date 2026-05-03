@@ -161,3 +161,4 @@ if (!$booking || $booking['passenger_id'] != $_SESSION['passenger_id']) {
 </div>
 
 <?php require_once 'includes/footer.php'; ?>
+   
