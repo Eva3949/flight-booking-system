@@ -4,7 +4,7 @@ require_once 'includes/header.php';
 
 // Check if user is logged in
 if (!isLoggedIn()) {
-    redirect('login.php');
+    redirect('login.php');  
 }
 
 // Check if booking_id is provided
