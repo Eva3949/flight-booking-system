@@ -6,11 +6,11 @@
 // define('DB_NAME', 'if0_41562340_flight_booking_system');
 // define('DB_PORT', '3306');
 
-define('DB_SERVER', 'sql300.infinityfree.com');
-define('DB_USERNAME', 'if0_41562340');
-define('DB_PASSWORD', 'Eva39499987');
-define('DB_NAME', 'if0_41562340_flight_booking_system');
-define('DB_PORT', '3306');
+define('DB_SERVER', 'pg-2bbdd125-samueltenkir3949-602d.k.aivencloud.com');
+define('DB_USERNAME', 'avnadmin');
+define('DB_PASSWORD', 'AVNS_TI0RDIg5Vv2FfCLZUls');
+define('DB_NAME', 'defaultdb');
+define('DB_PORT', '13544');
 // define('DB_SERVER', 'localhost');
 // define('DB_USERNAME', 'root');
 // define('DB_PASSWORD', '');
