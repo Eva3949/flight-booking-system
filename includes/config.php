@@ -19,7 +19,8 @@ define('DB_PORT', '3306');
 
 // Application configuration
 define('SITE_NAME', 'Flight Booking System');
-define('SITE_URL', 'http://localhost/flight-booking-system');
+define('SITE_URL', 'https://astuflightbooking1-o01l92yi.b4a.run/');
+//define('SITE_URL', 'http://localhost/flight-booking-syste');
 define('ADMIN_EMAIL', 'admin@yourdomain.com');
 
 // Session configuration
